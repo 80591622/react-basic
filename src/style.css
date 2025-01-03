@@ -1,0 +1,82 @@
+.input {
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 15px; /* Add padding for better spacing */
+  font-size: 16px; /* Slightly larger text for readability */
+  color: #333; /* Dark gray text */
+  background-color: #f9f9f9; /* Light background color */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for focus state */
+  margin-right: 20px; /* Keep right margin */
+}
+
+.input:focus {
+  border-color: #6c8ce4; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(108, 140, 228, 0.5); /* Subtle shadow for focus effect */
+  outline: none; /* Remove default outline */
+}
+
+.input::placeholder {
+  color: #aaa; /* Lighter color for placeholder */
+  font-style: italic; /* Italicize placeholder for better differentiation */
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green background for a clean and professional look */
+  color: white; /* White text for contrast */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 20px; /* Sufficient padding for a comfortable click area */
+  font-size: 16px; /* Legible font size */
+  font-weight: 600; /* Bold text for emphasis */
+  cursor: pointer; /* Pointer cursor to indicate clickability */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+}
+
+.button:hover {
+  background-color: #45a049; /* Slightly darker green on hover for interactivity */
+}
+
+.button:active {
+  transform: translateY(2px); /* Button presses down slightly when clicked */
+}
+
+.button:disabled {
+  background-color: #dcdcdc; /* Light gray background when disabled */
+  cursor: not-allowed; /* Change cursor to indicate the button is not clickable */
+}
+
+
+
+
+body {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Optional, for better font appearance */
+}
+
+div {
+  text-align: center; /* Center the text inside the div */
+}
+
+ul {
+  list-style-type: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+  margin-top: 20px; /* Space between button and list */
+}
+
+li {
+  cursor: pointer; /* Change cursor to pointer when hovering over list items */
+  padding: 8px;
+  border: 1px solid #ddd; /* Border for list items */
+  border-radius: 4px; /* Rounded corners for list items */
+  margin-bottom: 5px; /* Space between list items */
+  transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+li:hover {
+  background-color: #f1f1f1; /* Highlight list item on hover */
+}
